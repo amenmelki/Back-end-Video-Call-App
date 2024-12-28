@@ -1,17 +1,17 @@
 module.exports = {
     handleOffer: (socket, data) => {
       console.log('Offer received:', data);
-      socket.broadcast.emit('offer', data); // Broadcast offer to other peers
+      socket.broadcast.emit('offer', data); 
     },
   
     handleAnswer: (socket, data) => {
       console.log('Answer received:', data);
-      socket.broadcast.emit('answer', data); // Broadcast answer to other peers
+      socket.broadcast.emit('answer', data); 
     },
   
     handleCandidate: (socket, data) => {
       console.log('Candidate received:', data);
-      socket.broadcast.emit('candidate', data); // Broadcast ICE candidate
+      socket.broadcast.emit('candidate', data);
     },
   };
   
