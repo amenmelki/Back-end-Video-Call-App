@@ -1,0 +1,4 @@
+# Ensure all text files use LF line endings
+* text=auto
+*.js text eol=lf
+*.d.ts text eol=lf
